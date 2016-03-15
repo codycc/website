@@ -1,0 +1,42 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 about homepage_content">
+      <h2>About</h2>
+      <hr>
+      <p>I am here to create that stunning user experience for
+         clients.</p>
+      <p>Have over 2 years experience with HTML/CSS,
+         Javascript and responsive design.
+         Currently focusing on React.js with knowledge of
+          Ruby on Rails. </p>
+
+      <p> Coming from a strong background of marketing,
+         design and music. I've worked with various
+         major record labels, teaming with their artists.
+        Whom I met with and wrote for accordingly
+        depending on the individuals image and
+        perspective on music. </p>
+        <p> You can find me on <a href="">Instragram</a>, posting scenery
+          and music related,on my <a href="">Github</a> where I'm pushing daily
+          as well as <a href="">linkedIn</a>. Feel free to connect</p>
+    </div>
+
+    <div class="col-2 homepage_content">
+      <h2>Stuff I've Written</h2>
+      <hr>
+      <% @posts.each do |post| %>
+          <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          <p class="date"><%= post.created_at.strftime("%A, %b %d")%></p>
+      <%end%>
+    </div>
+
+    <div class="col-3 homepage_content">
+      <h2>Stuff I've Built</h2>
+      <hr>
+      <h3><a href="">The DO list</a></h3>
+      <p class="date">Friday April 10th</p>
+      <h3><a href="">The DO list</a></h3>
+      <p class="date">Friday April 10th</p>
+      <h3><a href="">The DO list</a></h3>
+      <p class="date">Friday April 10th</p>
+    </div>
+  </div>
