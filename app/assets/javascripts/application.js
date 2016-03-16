@@ -22,8 +22,7 @@ $(document).on('ready',function() {
   $('.nav2').hide().fadeIn(2800);
   $('.nav3').hide().fadeIn(3000);
 
-
-
-
-
+  $('.overlay').on('click', function(){
+    $(self).fadeOut(3000);
+  })
 })

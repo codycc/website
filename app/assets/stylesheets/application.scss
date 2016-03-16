@@ -5,13 +5,15 @@ $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #E9E9E9;
 
-
-
 * {
   box-sizing: border-box;
 }
 body {
   font-family: 'Raleway', sans-serif;
+}
+.overlay {
+  background-color:black;
+  height:100%;
 }
 .wrapper {
   width: 90%;
