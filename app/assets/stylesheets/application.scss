@@ -84,13 +84,36 @@ hr {
   border-top: 2px solid $highlight;
   margin: 2rem 0;
 }
-
+.welcome_body {
+  background-color:white;
+}
 .welcome_page {
   text-align:center;
   a{
     text-decoration:none;
     color: $highlight;
   }
+}
+
+
+  a{
+    &:hover {
+      -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);
+      -ms-filter: blur(1px);
+      -o-filter: blur(1px);
+      filter: blur(1px);
+    }
+  }
+
+
+.blur_class {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
+
 }
 
 #main_navigation {
@@ -116,9 +139,18 @@ hr {
       text-decoration:none;
       margin: 0 1rem;
       font-size: 1rem;
+      &:hover {
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -ms-filter: blur(1px);
+        -o-filter: blur(1px);
+        filter: blur(1px);
+
+      }
     }
   }
 }
+
 #page_title {
 
   text-align:center;
@@ -157,6 +189,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   border: 2px solid $border;
   padding: 1em;
   margin: .5em 0 2em 0;
+  resize:none;
 }
 textarea {
   min-height: 20em;

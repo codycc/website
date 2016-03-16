@@ -1,3 +1,4 @@
+<body id="welcome_index_page">
 <div class="wrapper wrapper_padding clearfix">
     <div class="col-1 about homepage_content">
       <h2>About</h2>
@@ -15,13 +16,13 @@
         Whom I met with and wrote for accordingly
         depending on the individuals image and
         perspective on music. </p>
-        <p> You can find me on <a href="">Instragram</a>, posting scenery
-          and music related,on my <a href="">Github</a> where I'm pushing daily
-          as well as <a href="">linkedIn</a>. Feel free to connect</p>
+        <p> You can find me on <a href="https://instagram.com/codycondon_" target="_blank">Instragram</a>, posting pictures
+          mostly music related,on my <a href="https://github.com/codycc" target="_blank">Github</a> where I'm pushing daily
+          as well as <a href="https://ca.linkedin.com/in/codycondon" target="_blank">linkedIn</a>. Feel free to connect</p>
     </div>
 
     <div class="col-2 homepage_content">
-      <h2>Stuff I've Written</h2>
+      <h2>Thoughts</h2>
       <hr>
       <% @posts.each do |post| %>
           <h3><a href="#"><%= link_to post.title, post %></a></h3>
@@ -30,7 +31,7 @@
     </div>
 
     <div class="col-3 homepage_content">
-      <h2>Stuff I've Built</h2>
+      <h2>Projects</h2>
       <hr>
       <% @projects.each do |project| %>
           <h3><a href="#"><%= link_to project.title, project %></a></h3>
@@ -39,3 +40,4 @@
 
     </div>
   </div>
+</body>

@@ -25,4 +25,20 @@ $(document).on('ready',function() {
   $('.welcome_page h1').hide().fadeIn(4000);
   $('.welcome_page a').hide().fadeIn(5000);
 
-})
+
+
+
+  if (window.location.pathname == "/welcome/index") {
+    $('.col-1').hide().fadeIn(3000);
+    $('.col-2').hide().fadeIn(4000);
+    $('.col-3').hide().fadeIn(5000);
+};
+
+
+
+
+
+
+
+
+});
