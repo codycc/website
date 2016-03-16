@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('ready',function() {
+
+  $('.name').hide().fadeIn(2600);
+  $('.nav1').hide().fadeIn(2600);
+  $('.nav2').hide().fadeIn(2800);
+  $('.nav3').hide().fadeIn(3000);
+
+
+
+
+
+})
