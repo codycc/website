@@ -85,6 +85,14 @@ hr {
   margin: 2rem 0;
 }
 
+.welcome_page {
+  text-align:center;
+  a{
+    text-decoration:none;
+    color: $highlight;
+  }
+}
+
 #main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
