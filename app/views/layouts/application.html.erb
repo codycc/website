@@ -13,9 +13,10 @@
 <body>
   <header id="main_navigation" class="clearfix">
     <%= link_to "Cody Condon", welcome_index_path, class: "name" %>
+
   <nav class="navbar">
-    <%= link_to "Thoughts", posts_path, class: "nav1" %>
-    <%= link_to "Projects", projects_path, class: "nav2" %>
+    <%= link_to "Projects", projects_path, class: "nav1" %>
+    <%= link_to "Thoughts", posts_path, class: "nav2" %>
     <%= link_to "Contact", new_contact_path, class: "nav3" %>
     <% if user_signed_in? %>
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
