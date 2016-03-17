@@ -8,11 +8,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <meta name="viewport" content="initial-scale=1">
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
     <%= link_to "Cody Condon", welcome_index_path, class: "name" %>
-  <nav>
+  <nav class="navbar">
     <%= link_to "Thoughts", posts_path, class: "nav1" %>
     <%= link_to "Projects", projects_path, class: "nav2" %>
     <%= link_to "Contact", new_contact_path, class: "nav3" %>
